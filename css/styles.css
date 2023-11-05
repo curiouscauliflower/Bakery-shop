@@ -1,12 +1,63 @@
+:root {
+    --color-brand-light: #819b57;
+    --color-brand-dark: #465929;
+    --color-primary-light: #faf4ea;
+    --color-primary-dark: #31261a;
+}
+
+body {
+    color: var(--color-primary-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
 .button {
-    color: #faf4ea;
-    background-color: #819857;
-    border: 2px solid #819857;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
 }
 
 .button:hover {
+    color: var(--color-brand-dark);
     background-color: transparent;
-    color: #819857;
+}
+
+.link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.link:hover {
+    color: var(--color-brand-light);
+}
+
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+    color: var(--color-brand-light);
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.advantages-list {
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+}
+
+.section-title {
+    color: var(--color-primary-dark);
 }
